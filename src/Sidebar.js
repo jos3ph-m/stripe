@@ -12,6 +12,11 @@ const Sidebar = () => {
       }`}
     >
       sidebar component
+      <div className="sidebar">
+        <button className="close-btn" onClick={closeSidebar}>
+          <FaTimes />
+        </button>
+      </div>
     </aside>
   );
 };
