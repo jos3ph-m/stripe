@@ -15,7 +15,7 @@ export const AppProvider = ({ children }) => {
     setIsSidebarOpen(false);
   };
 
-  const openSubmenu = () => {
+  const openSubmenu = (text, coordinates) => {
     setIsSubmenuOpen(true);
   };
 
