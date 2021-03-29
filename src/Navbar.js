@@ -13,7 +13,11 @@ const Navbar = () => {
     openSubmenu(page, { center, bottom });
   };
 
-  const handleSubmenu = (e) => {};
+  const handleSubmenu = (e) => {
+    if (!e.target.classList.contains('link-btn')) {
+      closeSubmenu();
+    }
+  };
 
   return (
     <nav className="nav" onMouoseOver={handleSubmenu}>
