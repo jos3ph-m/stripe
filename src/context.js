@@ -38,6 +38,7 @@ export const AppProvider = ({ children }) => {
         closeSubmenu,
         closeSidebar,
         location,
+        page,
       }}
     >
       {children}
