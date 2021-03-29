@@ -24,7 +24,7 @@ const Submenu = () => {
     if (links.length > 3) {
       setColumns('col-4');
     }
-  }, [location]);
+  }, [location, links]);
   return (
     <aside
       className={`${isSubmenuOpen ? 'submenu show' : 'submenu'}`}
@@ -37,7 +37,7 @@ const Submenu = () => {
           return (
             <a key={index} href={url}>
               {icon}
-              <p>{label}</p>
+              {label}
             </a>
           );
         })}
